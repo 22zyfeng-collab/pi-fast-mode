@@ -1,0 +1,21 @@
+{
+  "name": "pi-fast-mode",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fast / Ultrafast controls for Pi and Pi Web with native status buttons and entitlement checks.",
+  "type": "module",
+  "keywords": ["pi-package", "pi-extension", "openai", "codex"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/22zyfeng-collab/pi-fast-mode.git"
+  },
+  "scripts": {
+    "test": "node tools/fast-mode.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": ["./extensions/fast-mode.ts"]
+  }
+}
